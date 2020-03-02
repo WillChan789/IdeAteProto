@@ -115,5 +115,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\Ideaate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ideaate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="towerOfPisa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="towerOfPisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\towerpisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="towerpisa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
