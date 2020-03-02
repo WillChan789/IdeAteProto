@@ -7,7 +7,40 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="121,125,0,0" VerticalAlignment="Top" Width="75"/>
-
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="614,283,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
+            <ListBox Margin="60.2,58.2,9.2,9">
+                <ListBoxItem Content="Pasta --- $14.99"/>
+            </ListBox>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
+            <ListBox Margin="60.2,9.2,9.2,58">
+                <ListBoxItem Content="Pasta --- $14.99"/>
+            </ListBox>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
+            <ListBox Margin="9.2,9.2,60.2,58">
+                <ListBoxItem Content="Pasta --- $14.99"/>
+            </ListBox>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="0,283,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
+            <ListBox Margin="9.2,58.2,60.2,9">
+                <ListBoxItem Content="Pasta --- $14.99"/>
+            </ListBox>
+        </Border>
+        <TabControl HorizontalAlignment="Left" Height="341" Margin="202,69,0,0" VerticalAlignment="Top" Width="388">
+            <TabItem Header="Speicals">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Appertizers"/>
+            <TabItem Header="Mains"/>
+            <TabItem Header="Drinks"/>
+            <TabItem Header="Desserts">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,294,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,88,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,88,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,294,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
     </Grid>
 </Window>
