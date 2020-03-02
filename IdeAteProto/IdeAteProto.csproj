@@ -133,5 +133,8 @@
   <ItemGroup>
     <Resource Include="towerpisa.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\wip-icon-16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
