@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="PayTogether" Height="450" Width="800">
     <Grid>
-        <Label x:Name="AskPay" Content="Will you be paying together?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="277,108,0,0" Height="56" Width="203"/>
-        <Button Content="Yes" HorizontalAlignment="Left" Height="52" Margin="248,196,0,0" VerticalAlignment="Top" Width="92"/>
-        <Button Content="No" HorizontalAlignment="Left" Height="52" Margin="401,196,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="AskPay" Content="Will you be paying together?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="259,119,0,0" Height="56" Width="278" FontFamily="Century" FontSize="20"/>
+        <Button Content="Yes" HorizontalAlignment="Left" Height="67" Margin="261,207,0,0" VerticalAlignment="Top" Width="103" FontFamily="Century" FontSize="16" Background="#FF94F159"/>
+        <Button Content="No" HorizontalAlignment="Left" Height="67" Margin="433,207,0,0" VerticalAlignment="Top" Width="104" FontFamily="Century" FontSize="16" Background="#FFED8888"/>
     </Grid>
 </Window>
