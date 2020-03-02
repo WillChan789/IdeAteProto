@@ -8,7 +8,7 @@
         Title="PayTogether" Height="450" Width="800">
     <Grid>
         <Label x:Name="AskPay" Content="Will you be paying together?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="277,108,0,0" Height="56" Width="203"/>
-        <Button x:Name="y" Content="Yes" HorizontalAlignment="Left" Height="52" Margin="248,196,0,0" VerticalAlignment="Top" Width="92"/>
-        <Button x:Name="n" Content="No" HorizontalAlignment="Left" Height="52" Margin="401,196,0,0" VerticalAlignment="Top" Width="92"/>
+        <Button Content="Yes" HorizontalAlignment="Left" Height="52" Margin="248,196,0,0" VerticalAlignment="Top" Width="92"/>
+        <Button Content="No" HorizontalAlignment="Left" Height="52" Margin="401,196,0,0" VerticalAlignment="Top" Width="92"/>
     </Grid>
 </Window>
