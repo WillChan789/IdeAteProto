@@ -10,8 +10,8 @@
         <Border BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Left" Height="161" Margin="50,10,0,0" VerticalAlignment="Top" Width="693" CornerRadius="3">
             <Label x:Name="Welcome" Content="Welcome to Little Italy" HorizontalAlignment="Center" VerticalAlignment="Top" Height="59" Width="403" Margin="142.2,58.2,138,0" FontSize="40" FontFamily="Script MT Bold" FontStyle="Italic" Background="Transparent"/>
         </Border>
-        <Label x:Name="Howmany" Content="How many will be dining today?" HorizontalAlignment="Left" Height="32" Margin="307,176,0,0" VerticalAlignment="Top" Width="200" FontFamily="Century"/>
-        <ComboBox x:Name="PeopleDropdown" HorizontalAlignment="Left" Height="28" Margin="332,228,0,0" VerticalAlignment="Top" Width="139" IsDropDownOpen="True">
+        <Label x:Name="Howmany" Content="How many will be dining today?" HorizontalAlignment="Left" Height="32" Margin="307,222,0,0" VerticalAlignment="Top" Width="200" FontFamily="Century"/>
+        <ComboBox x:Name="PeopleDropdown" HorizontalAlignment="Left" Height="28" Margin="332,274,0,0" VerticalAlignment="Top" Width="139" IsDropDownOpen="True">
             <ComboBoxItem Content="1" />
             <ComboBoxItem Content="2" />
             <ComboBoxItem Content="3"/>
@@ -21,6 +21,7 @@
         <Image HorizontalAlignment="Left" Height="95" Margin="10,315,0,0" VerticalAlignment="Top" Width="134" Source="Ideaate.png"/>
         <Label Content="- Since 2005 -" HorizontalAlignment="Left" Height="36" Margin="332,34,0,0" VerticalAlignment="Top" Width="139" FontSize="20" FontFamily="Century"/>
         <Image HorizontalAlignment="Left" Height="143" Margin="649,28,0,0" VerticalAlignment="Top" Width="70" Source="towerpisa.png"/>
+        <Label Content="A little slice of Italy" HorizontalAlignment="Left" Margin="341,130,0,0" VerticalAlignment="Top" Width="121" FontFamily="Century"/>
 
 
     </Grid>
