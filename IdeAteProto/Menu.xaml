@@ -7,23 +7,23 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="614,283,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
-            <ListBox Margin="60.2,58.2,9.2,9">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="614,249,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
+            <ListBox Margin="60.2,85.2,9.2,9.4" Height="75.2">
                 <ListBoxItem Content="Pasta --- $14.99"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
-            <ListBox Margin="60.2,9.2,9.2,58">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
+            <ListBox Margin="60.2,9.2,9.2,85.4" Height="75.2">
                 <ListBoxItem Content="Pasta --- $14.99"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
-            <ListBox Margin="9.2,9.2,60.2,58">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
+            <ListBox Margin="9.2,9.2,60.2,85.4" Height="75.2">
                 <ListBoxItem Content="Pasta --- $14.99"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="0,283,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
-            <ListBox Margin="9.2,58.2,60.2,9">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,249,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
+            <ListBox Margin="9.2,85.2,60.2,9.4">
                 <ListBoxItem Content="Pasta --- $14.99"/>
             </ListBox>
         </Border>
@@ -244,15 +244,15 @@
                 </ScrollViewer>
             </TabItem>
         </TabControl>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,294,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,88,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,88,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,294,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,88,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,88,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,294,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,294,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click"/>
-        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32">
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" RenderTransformOrigin="0.417,-0.662"/>
+        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="668,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -262,5 +262,21 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32" Click="Button_Click_2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,88,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,311,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,311,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,88,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="38" Margin="202,10,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label Content="Drag and drop food into your cart. Send order when ready." HorizontalAlignment="Left" Height="36" Margin="279,16,0,0" VerticalAlignment="Top" Width="330"/>
     </Grid>
 </Window>
