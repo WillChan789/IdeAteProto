@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CallWaiter.xaml.cs">
+      <DependentUpon>CallWaiter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChangeIngredient.xaml.cs">
       <DependentUpon>ChangeIngredient.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
     <Compile Include="Tutorial.xaml.cs">
       <DependentUpon>Tutorial.xaml</DependentUpon>
     </Compile>
+    <Page Include="CallWaiter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ChangeIngredient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
