@@ -7,28 +7,28 @@
         mc:Ignorable="d"
         Title="CallWaiter" Height="450" Width="800">
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="614,283,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
-            <ListBox Margin="60.2,58.2,9.2,9">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="614,249,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
+            <ListBox Margin="60.2,85.2,9.2,9.4" Height="75.2">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
-            <ListBox Margin="60.2,9.2,9.2,58">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
+            <ListBox Margin="60.2,9.2,9.2,85.4" Height="75.2">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
-            <ListBox Margin="9.2,9.2,60.2,58">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
+            <ListBox Margin="9.2,9.2,60.2,85.4" Height="75.2">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="0,283,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
-            <ListBox Margin="9.2,58.2,60.2,9">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,249,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
+            <ListBox Margin="9.2,85.2,60.2,9.4">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
         <TabControl HorizontalAlignment="Left" Height="341" Margin="202,69,0,0" VerticalAlignment="Top" Width="388">
-            <TabItem Header="Speicals">
+            <TabItem Header="Speicals" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -71,7 +71,7 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Appertizers">
+            <TabItem Header="Appertizers" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -114,7 +114,7 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Mains">
+            <TabItem Header="Mains" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -157,7 +157,7 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Drinks">
+            <TabItem Header="Drinks" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -200,7 +200,7 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Desserts">
+            <TabItem Header="Desserts" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -244,15 +244,15 @@
                 </ScrollViewer>
             </TabItem>
         </TabControl>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,294,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,88,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,88,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,294,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,88,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,88,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,294,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,294,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32">
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" RenderTransformOrigin="0.417,-0.662" FontFamily="Century" FontSize="11"/>
+        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="668,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32" FontFamily="Century">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -262,7 +262,24 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="206" RadiusY="20" RadiusX="20" Stroke="Black" VerticalAlignment="Top" Width="206" Margin="285,105,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="117" TextWrapping="Wrap" Text="Help is on the way" VerticalAlignment="Top" Width="165" Margin="307,139,0,0" FontSize="34"/>
+        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32" Click="Button_Click_2" FontFamily="Century">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="38" Margin="202,10,0,0" VerticalAlignment="Top" Width="72" FontFamily="Century"/>
+        <Label Content="Drag and drop food into your cart. Send order when ready." HorizontalAlignment="Left" Height="32" Margin="279,16,0,0" VerticalAlignment="Top" Width="330" FontFamily="Century"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="201" RadiusY="20" RadiusX="20" Stroke="Black" VerticalAlignment="Top" Width="201" Margin="294,114,0,0"/>
+        <Label Content="Help is &#xD;&#xA;on the way" HorizontalAlignment="Left" Height="114" Margin="314,149,0,0" VerticalAlignment="Top" Width="165" FontFamily="Century" FontSize="26px" HorizontalContentAlignment="Center"/>
+        <Button Content="OK" VerticalAlignment="Top" Margin="342,252,349.333,0" FontFamily="Century" Height="29"/>
     </Grid>
 </Window>

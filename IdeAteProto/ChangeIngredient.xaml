@@ -7,28 +7,28 @@
         mc:Ignorable="d"
         Title="ChangeIngredient" Height="450" Width="800">
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="614,283,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
-            <ListBox Margin="60.2,58.2,9.2,9">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="614,249,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
+            <ListBox Margin="60.2,85.2,9.2,9.4" Height="75.2">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
-            <ListBox Margin="60.2,9.2,9.2,58">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
+            <ListBox Margin="60.2,9.2,9.2,85.4" Height="75.2">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
-            <ListBox Margin="9.2,9.2,60.2,58">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
+            <ListBox Margin="9.2,9.2,60.2,85.4" Height="75.2">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="137" Margin="0,283,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
-            <ListBox Margin="9.2,58.2,60.2,9">
-                <ListBoxItem Content="Pasta --- $14.99"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,249,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
+            <ListBox Margin="9.2,85.2,60.2,9.4">
+                <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
             </ListBox>
         </Border>
         <TabControl HorizontalAlignment="Left" Height="341" Margin="202,69,0,0" VerticalAlignment="Top" Width="388">
-            <TabItem Header="Speicals">
+            <TabItem Header="Speicals" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -50,8 +50,8 @@
                         <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20"/>
                         <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
                         <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
-                        <Image Grid.Column="2" HorizontalAlignment="Left" Height="16" Margin="17,37,0,0" VerticalAlignment="Top" Width="19" Source="assets/wip-icon-16.png" Stretch="Fill"/>
-                        <Label Content="food $" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="8.333,47,0,0" VerticalAlignment="Top" Width="38" FontSize="6" HorizontalContentAlignment="Center"/>
+                        <Image Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="38.333,26,0,0" VerticalAlignment="Top" Width="22" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+                        <Label Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="33.667,37,0,0" VerticalAlignment="Top" Width="37" FontSize="10" HorizontalContentAlignment="Center" Grid.ColumnSpan="2"/>
                         <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,125,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
                         <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,39.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
                         <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
@@ -68,56 +68,13 @@
                         <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,39.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
                         <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
                         <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,134.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <CheckBox Grid.ColumnSpan="2" Content="Ingr. 1" Grid.Column="1" HorizontalAlignment="Left" Height="16" Margin="16,32,0,0" VerticalAlignment="Top" Width="74" FontSize="8"/>
-                        <CheckBox Grid.ColumnSpan="2" Content="Ingr. 2" Grid.Column="1" HorizontalAlignment="Left" Height="16" Margin="16,52,0,0" VerticalAlignment="Top" Width="74" FontSize="8"/>
-                        <CheckBox Grid.ColumnSpan="2" Content="Ingr. 3" Grid.Column="1" HorizontalAlignment="Left" Height="16" Margin="16,73,0,0" VerticalAlignment="Top" Width="74" FontSize="8"/>
+                        <CheckBox Content="Ingr. 1" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="23.333,56,0,0" Height="21" Width="57" Grid.Column="1" FontSize="11"/>
+                        <CheckBox Content="Ingr. 2" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="23.333,71,0,0" Height="21" Width="57" Grid.Column="1" FontSize="11"/>
+                        <CheckBox Content="Ingr. 3" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="23.333,85,0,0" Height="21" Width="57" Grid.Column="1" FontSize="11"/>
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Appertizers">
-                <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
-                    <Grid Background="#FFE5E5E5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="67*"/>
-                            <RowDefinition Height="90*"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="18*"/>
-                            <ColumnDefinition Width="61*"/>
-                            <ColumnDefinition Width="10*"/>
-                            <ColumnDefinition Width="293*"/>
-                        </Grid.ColumnDefinitions>
-                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="10.5,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20"/>
-                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="10.5,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
-                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="10.5,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
-                        <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,32,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill"/>
-                        <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,80,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center"/>
-                        <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,125,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
-                        <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,39.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
-                        <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,134.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,31,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,79,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,124,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,38.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,85.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,133.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,32,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,80,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,125,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,39.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,134.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                    </Grid>
-                </ScrollViewer>
-            </TabItem>
-            <TabItem Header="Mains">
+            <TabItem Header="Appertizers" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -160,7 +117,7 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Drinks">
+            <TabItem Header="Mains" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -203,7 +160,50 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Desserts">
+            <TabItem Header="Drinks" FontFamily="Century" FontSize="14">
+                <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
+                    <Grid Background="#FFE5E5E5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="67*"/>
+                            <RowDefinition Height="90*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="18*"/>
+                            <ColumnDefinition Width="61*"/>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="293*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="10.5,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20"/>
+                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="10.5,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
+                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="10.5,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
+                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20"/>
+                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
+                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
+                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20"/>
+                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
+                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
+                        <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,32,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill"/>
+                        <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,80,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center"/>
+                        <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,125,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
+                        <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,39.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
+                        <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
+                        <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,134.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
+                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,31,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill"/>
+                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,79,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center"/>
+                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,124,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
+                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,38.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
+                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,85.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
+                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,133.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
+                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,32,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill"/>
+                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,80,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center"/>
+                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,125,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
+                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,39.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
+                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
+                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,134.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Desserts" FontFamily="Century" FontSize="14">
                 <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
                     <Grid Background="#FFE5E5E5">
                         <Grid.RowDefinitions>
@@ -247,15 +247,15 @@
                 </ScrollViewer>
             </TabItem>
         </TabControl>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,294,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,88,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,88,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,294,0,0" VerticalAlignment="Top" Width="63" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,88,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,88,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,294,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,294,0,0" VerticalAlignment="Top" Width="68" />
-        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32">
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" RenderTransformOrigin="0.417,-0.662" FontFamily="Century" FontSize="11"/>
+        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="668,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32" FontFamily="Century">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -265,5 +265,21 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32" Click="Button_Click_2" FontFamily="Century">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="38" Margin="202,10,0,0" VerticalAlignment="Top" Width="72" FontFamily="Century"/>
+        <Label Content="Drag and drop food into your cart. Send order when ready." HorizontalAlignment="Left" Height="32" Margin="279,16,0,0" VerticalAlignment="Top" Width="330" FontFamily="Century"/>
     </Grid>
 </Window>
