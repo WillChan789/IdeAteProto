@@ -244,14 +244,14 @@
                 </ScrollViewer>
             </TabItem>
         </TabControl>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,114,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,271,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" RenderTransformOrigin="0.417,-0.662" FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,271,0,0" VerticalAlignment="Top" Width="63"  FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63"  FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63"  FontFamily="Century" FontSize="11"/>
+        <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63"  FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,114,0,0" VerticalAlignment="Top" Width="68"  FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,114,0,0" VerticalAlignment="Top" Width="68"  FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="92,271,0,0" VerticalAlignment="Top" Width="68"  FontFamily="Century" FontSize="11"/>
+        <Button Content="Request Bill" HorizontalAlignment="Left" Height="35" Margin="632,271,0,0" VerticalAlignment="Top" Width="68"  RenderTransformOrigin="0.417,-0.662" FontFamily="Century" FontSize="11"/>
         <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="668,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32" FontFamily="Century">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -262,7 +262,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32" Click="Button_Click_2" FontFamily="Century">
+        <Button Content="Call Waiter " HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Height="32"  FontFamily="Century">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
