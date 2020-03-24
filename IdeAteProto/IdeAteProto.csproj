@@ -157,5 +157,17 @@
   <ItemGroup>
     <Resource Include="assets\wip-icon-16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="alfredo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="linguine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="margarita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spicy sausage.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
