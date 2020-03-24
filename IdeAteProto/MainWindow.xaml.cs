@@ -24,5 +24,23 @@ namespace IdeAteProto
         {
             InitializeComponent();
         }
+
+        private void Next_Click(object sender, RoutedEventArgs e)
+        {
+            string str = PeopleDropdown.Text;
+            ComboBoxItem cbi = (ComboBoxItem)PeopleDropdown.SelectedItem;
+            string num = cbi.Content.ToString();
+            int n = Int16.Parse(num);
+            if (n > 1)
+            {
+                PayTogether winA = new PayTogether();
+                winA.Show();
+            } else
+            {
+                Menu winB = new Menu();
+                winB.Show();
+            }
+            this.Close();
+        }
     }
 }
