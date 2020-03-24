@@ -23,5 +23,19 @@ namespace IdeAteProto
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Menu winA = new Menu();
+            winA.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Menu winA = new Menu();
+            winA.Show();
+            this.Close();
+        }
     }
 }
