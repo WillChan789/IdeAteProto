@@ -169,5 +169,23 @@
   <ItemGroup>
     <Resource Include="spicy sausage.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pay.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
