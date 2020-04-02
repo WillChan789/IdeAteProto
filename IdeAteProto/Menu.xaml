@@ -51,31 +51,41 @@
                                 <ImageBrush ImageSource="spicy sausage.png"/>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="10.5,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
+                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="10.5,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="salmon.png"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
                         <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="27,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20">
                             <Rectangle.Fill>
                                 <ImageBrush ImageSource="linguine.png"/>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
+                        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="27,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="calzone.png"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="27,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="lasagna.png"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
                         <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20">
                             <Rectangle.Fill>
                                 <ImageBrush ImageSource="margarita.png"/>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
-                        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
-                        <Image Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="19.5,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
-                        <Label Grid.ColumnSpan="2" Content="food $" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="19.5,134.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,124,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,38.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="37,85.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="37,133.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,125,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.RowSpan="2"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,39.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
-                        <Image Grid.Column="3" HorizontalAlignment="Left" Height="52" Margin="152,86.5,0,0" VerticalAlignment="Top" Width="60" Source="assets/wip-icon-16.png" Stretch="Fill" Grid.Row="1"/>
-                        <Label Content="food $" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="152,134.5,0,0" VerticalAlignment="Top" Width="60" FontSize="10" HorizontalContentAlignment="Center" Grid.Row="1"/>
+                        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="carne.png"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="tiramisu.png"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
                     </Grid>
                 </ScrollViewer>
             </TabItem>
@@ -256,17 +266,61 @@
         <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
         <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
         <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+        <Button x:Name="payBlue" Content="" HorizontalAlignment="Left" Height="48" Margin="112,114,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontFamily="Century" FontSize="11">
+            <Button.Background>
+                <ImageBrush ImageSource="pay.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="callWaiterL" Content="" HorizontalAlignment="Left" Margin="57,176,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.5,0.5" Height="68" Click="Button_Click_2" FontFamily="Century">
+            <Button.Background>
+                <ImageBrush ImageSource="waiter.png"/>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
         <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
         <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
         <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
         <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+        <Button x:Name="infoButton" Content="" HorizontalAlignment="Left" Height="54" Margin="221,7,0,0" VerticalAlignment="Top" Width="53" FontFamily="Century">
+            <Button.Background>
+                <ImageBrush ImageSource="info.png"/>
+            </Button.Background>
+        </Button>
         <Label Content="Drag and drop food into your cart. Send order when ready." HorizontalAlignment="Left" Height="32" Margin="279,16,0,0" VerticalAlignment="Top" Width="330" FontFamily="Century"/>
-        <Image x:Name="callWaiterL" HorizontalAlignment="Left" Height="59" Margin="55,180,0,0" VerticalAlignment="Top" Width="59" Source="waiter.png"/>
-        <Image x:Name="callWaiterR" HorizontalAlignment="Left" Height="59" Margin="689,180,0,0" VerticalAlignment="Top" Width="59" Source="waiter.png"/>
-        <Image x:Name="info" HorizontalAlignment="Left" Height="55" Margin="210,5,0,0" VerticalAlignment="Top" Width="55" Source="info.png"/>
-        <Image x:Name="payBlue" HorizontalAlignment="Left" Height="46" Margin="107,114,0,0" VerticalAlignment="Top" Width="53" Source="pay.png"/>
-        <Image x:Name="payYellow" HorizontalAlignment="Left" Height="46" Margin="107,271,0,0" VerticalAlignment="Top" Width="53" Source="pay.png"/>
-        <Image x:Name="payPurple" HorizontalAlignment="Left" Height="46" Margin="632,271,0,0" VerticalAlignment="Top" Width="53" Source="pay.png"/>
-        <Image x:Name="payRed" HorizontalAlignment="Left" Height="46" Margin="632,114,0,0" VerticalAlignment="Top" Width="53" Source="pay.png"/>
+        <Button x:Name="callWaiterR" Content="" HorizontalAlignment="Left" Margin="680,176,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.5,0.5" Height="68" Click="Button_Click_2" FontFamily="Century">
+            <Button.Background>
+                <ImageBrush ImageSource="waiter.png"/>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="payYellow" Content="" HorizontalAlignment="Left" Height="48" Margin="112,268,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontFamily="Century" FontSize="11">
+            <Button.Background>
+                <ImageBrush ImageSource="pay.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="payPurple" Content="" HorizontalAlignment="Left" Height="48" Margin="625,268,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontFamily="Century" FontSize="11">
+            <Button.Background>
+                <ImageBrush ImageSource="pay.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="payRed" Content="" HorizontalAlignment="Left" Height="48" Margin="625,114,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontFamily="Century" FontSize="11">
+            <Button.Background>
+                <ImageBrush ImageSource="pay.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
