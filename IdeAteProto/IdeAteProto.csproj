@@ -202,5 +202,8 @@
   <ItemGroup>
     <Resource Include="tiramisu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back-button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
