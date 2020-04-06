@@ -38,5 +38,26 @@ namespace IdeAteProto
         {
 
         }
+
+        private bool dragging;
+        private void MouseLeftDownRect (object sender, MouseButtonEventArgs e)
+        {
+            dragging = true;
+            this.CaptureMouse();
+        }
+        private void MouseLeftUpRect (object sender, MouseButtonEventArgs e)
+        {
+            dragging = false;
+            this.ReleaseMouseCapture();
+        }
+        private void MouseMoveRect (object sender, MouseEventArgs e)
+        {
+            if (!dragging) {
+                return;
+            }
+            var mousepos = e.GetPosition(canvas);
+            double left = mousepos.X - (this.ActualWidth / 2);
+            double top = mousepos.Y - (this.ActualHeight / 2);
+        }
     }
 }

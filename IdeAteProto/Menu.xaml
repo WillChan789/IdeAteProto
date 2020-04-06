@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid>
+        <Canvas Name="canvas">
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="614,249,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
             <ListBox Margin="60.2,85.2,9.2,9.4" Height="75.2">
                 <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
@@ -41,7 +42,7 @@
                             <ColumnDefinition Width="10*"/>
                             <ColumnDefinition Width="293*"/>
                         </Grid.ColumnDefinitions>
-                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="10.5,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20">
+                        <Rectangle Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="10.5,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" MouseLeftButtonDown="MouseLeftDownRect" MouseLeftButtonUp="MouseLeftUpRect" MouseMove="MouseMoveRect">
                             <Rectangle.Fill>
                                 <ImageBrush ImageSource="alfredo.png"/>
                             </Rectangle.Fill>
@@ -328,5 +329,6 @@
                 <ImageBrush ImageSource="pay.png"/>
             </Button.Background>
         </Button>
+        </Canvas>
     </Grid>
 </Window>
