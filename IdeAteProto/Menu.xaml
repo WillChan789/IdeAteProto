@@ -43,12 +43,12 @@
                             <ColumnDefinition Width="293*"/>
                         </Grid.ColumnDefinitions>
                             <Grid Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="10.5,27,0,0"  VerticalAlignment="Top" Width="80"  MouseLeftButtonDown="MouseLeftDownRect" MouseLeftButtonUp="MouseLeftUpRect" MouseMove="MouseMoveRect">
-                                <Rectangle x:Name="testrectangle" Stroke="Black" RadiusY="20" RadiusX="20">
+                                <Rectangle x:Name="alfredo" Stroke="Black" RadiusY="20" RadiusX="20">
                                     <Rectangle.Fill>
                                         <ImageBrush ImageSource="alfredo.png"/>
                                     </Rectangle.Fill>
                                 </Rectangle>
-                                <TextBlock x:Name="testtext" Visibility="Hidden" TextAlignment="Center" TextWrapping="Wrap">ingridients and shit</TextBlock>
+                                <TextBlock x:Name="alfredot" Visibility="Hidden" TextAlignment="Center" TextWrapping="Wrap">ingridients and shit</TextBlock>
                             </Grid>
                         <Rectangle Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="10.5,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2">
                             <Rectangle.Fill>

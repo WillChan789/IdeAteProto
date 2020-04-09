@@ -49,13 +49,42 @@ namespace IdeAteProto
         private void MouseLeftUpRect (object sender, MouseButtonEventArgs e)
         {
             dragging = false;
+            
             var mouseWasDownOn = e.Source as FrameworkElement;
-            string elementName = mouseWasDownOn.Name;
+            var last = (mouseWasDownOn.Name).Substring((mouseWasDownOn.Name).Length - 1);
+            if (last != "t")
+            {
+                string elementName = mouseWasDownOn.Name;
+                string elementName2 = elementName + "t";
+                string pic = elementName + ".png";
 
-            var myRectangle = (Rectangle)this.FindName(elementName);
+                var myRectangle = (Rectangle)this.FindName(elementName);
+                var myTextBlock = (TextBlock)this.FindName(elementName2);
 
-            myRectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
-            testtext.Visibility = Visibility.Visible;
+
+                myRectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
+                myTextBlock.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                string elementName2 = mouseWasDownOn.Name;
+                string elementName = elementName2.Remove(elementName2.Length - 1);
+                string pic = "assets/" + elementName + ".png";
+
+                var myRectangle = (Rectangle)this.FindName(elementName);
+                var myTextBlock = (TextBlock)this.FindName(elementName2);
+
+
+                myRectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
+                myTextBlock.Visibility = Visibility.Visible;
+
+                ImageBrush imgBrush = new ImageBrush();
+                imgBrush.ImageSource = new BitmapImage(new Uri(pic, UriKind.Relative));////////////////////////this part doenst work 
+                // Fill rectangle with an ImageBrush 
+                myRectangle.Fill = imgBrush;
+
+                myTextBlock.Visibility = Visibility.Hidden;
+            }
             this.ReleaseMouseCapture();
         }
         private void MouseMoveRect (object sender, MouseEventArgs e)
