@@ -69,7 +69,7 @@ namespace IdeAteProto
             {
                 string elementName2 = mouseWasDownOn.Name;
                 string elementName = elementName2.Remove(elementName2.Length - 1);
-                string pic = "assets/" + elementName + ".png";
+                string pic = elementName + ".png";
 
                 var myRectangle = (Rectangle)this.FindName(elementName);
                 var myTextBlock = (TextBlock)this.FindName(elementName2);
@@ -79,7 +79,7 @@ namespace IdeAteProto
                 myTextBlock.Visibility = Visibility.Visible;
 
                 ImageBrush imgBrush = new ImageBrush();
-                imgBrush.ImageSource = new BitmapImage(new Uri(pic, UriKind.Relative));////////////////////////this part doenst work 
+                imgBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/"+pic, UriKind.Absolute));
                 // Fill rectangle with an ImageBrush 
                 myRectangle.Fill = imgBrush;
 

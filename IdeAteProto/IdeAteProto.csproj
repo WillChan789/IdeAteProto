@@ -158,7 +158,9 @@
     <Resource Include="assets\wip-icon-16.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="alfredo.png" />
+    <Resource Include="alfredo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="linguine.png" />
