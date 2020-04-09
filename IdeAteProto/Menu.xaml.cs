@@ -49,7 +49,12 @@ namespace IdeAteProto
         private void MouseLeftUpRect (object sender, MouseButtonEventArgs e)
         {
             dragging = false;
-            testrectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
+            var mouseWasDownOn = e.Source as FrameworkElement;
+            string elementName = mouseWasDownOn.Name;
+
+            var myRectangle = (Rectangle)this.FindName(elementName);
+
+            myRectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
             testtext.Visibility = Visibility.Visible;
             this.ReleaseMouseCapture();
         }
