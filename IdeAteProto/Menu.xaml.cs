@@ -44,10 +44,13 @@ namespace IdeAteProto
         {
             dragging = true;
             this.CaptureMouse();
+            this.ReleaseMouseCapture();
         }
         private void MouseLeftUpRect (object sender, MouseButtonEventArgs e)
         {
             dragging = false;
+            testrectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
+            testtext.Visibility = Visibility.Visible;
             this.ReleaseMouseCapture();
         }
         private void MouseMoveRect (object sender, MouseEventArgs e)
