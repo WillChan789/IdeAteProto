@@ -19,6 +19,9 @@ namespace IdeAteProto
     /// </summary>
     public partial class Menu : Window
     {
+        bool drag = false;
+        Point startPoint;
+
         public Menu()
         {
             InitializeComponent();
@@ -68,7 +71,7 @@ namespace IdeAteProto
 
 
                 myRectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
-                //myTextBlock.Visibility = Visibility.Visible;
+                myTextBlock.Visibility = Visibility.Visible;
                 ing1.Visibility = Visibility.Visible;
                 ing2.Visibility = Visibility.Visible;
                 ing3.Visibility = Visibility.Visible;
@@ -82,6 +85,9 @@ namespace IdeAteProto
 
                 var myRectangle = (Rectangle)this.FindName(elementName);
                 var myTextBlock = (TextBlock)this.FindName(elementName2);
+                var ing1 = (CheckBox)this.FindName(elementName + "i1");
+                var ing2 = (CheckBox)this.FindName(elementName + "i2");
+                var ing3 = (CheckBox)this.FindName(elementName + "i3");
 
 
                 myRectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
@@ -93,6 +99,9 @@ namespace IdeAteProto
                 myRectangle.Fill = imgBrush;
 
                 myTextBlock.Visibility = Visibility.Hidden;
+                ing1.Visibility = Visibility.Hidden;
+                ing2.Visibility = Visibility.Hidden;
+                ing3.Visibility = Visibility.Hidden;
             }
             this.ReleaseMouseCapture();
         }
@@ -104,6 +113,36 @@ namespace IdeAteProto
             var mousepos = e.GetPosition(canvas);
             double left = mousepos.X - (this.ActualWidth / 2);
             double top = mousepos.Y - (this.ActualHeight / 2);
+        }
+
+        private void rectangle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // start dragging
+            drag = true;
+            // save start point of dragging
+            startPoint = Mouse.GetPosition(canvas);
+        }
+
+        private void rectangle_MouseMove(object sender, MouseEventArgs e)
+        {
+            // if dragging, then adjust rectangle position based on mouse movement
+            if (drag)
+            {
+                Rectangle draggedRectangle = sender as Rectangle;
+                Point newPoint = Mouse.GetPosition(canvas);
+                double left = Canvas.GetLeft(draggedRectangle);
+                double top = Canvas.GetTop(draggedRectangle);
+                Canvas.SetLeft(draggedRectangle, left + (newPoint.X - startPoint.X));
+                Canvas.SetTop(draggedRectangle, top + (newPoint.Y - startPoint.Y));
+
+                startPoint = newPoint;
+            }
+        }
+
+        private void rectangle_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            // stop dragging
+            drag = false;
         }
     }
 }

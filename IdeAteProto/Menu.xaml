@@ -48,10 +48,10 @@
                                         <ImageBrush ImageSource="alfredo.png"/>
                                     </Rectangle.Fill>
                                 </Rectangle>
-                                <TextBlock x:Name="alfredot" Visibility="Hidden" TextAlignment="Center" TextWrapping="Wrap">Chicken, Cheese, Pasta, Herbs</TextBlock>
-                                <CheckBox x:Name="alfredoi1" Content="Chicken" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
-                                <CheckBox x:Name="alfredoi2" Content="Cheese" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,26,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
-                                <CheckBox x:Name="alfredoi3" Content="Garlic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,42,0,0" Height="22" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <TextBlock x:Name="alfredot" Visibility="Hidden" TextAlignment="Center" TextWrapping="Wrap" FontSize="8">Chicken, Cheese, Pasta, Herbs</TextBlock>
+                                <CheckBox x:Name="alfredoi1" Content="Chicken" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="alfredoi2" Content="Cheese" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="alfredoi3" Content="Garlic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" Height="22" Width="57" FontSize="10" Visibility="Hidden"/>
 
 
                             </Grid>
@@ -65,7 +65,7 @@
                                     <ImageBrush ImageSource="salmon.png"/>
                                 </Rectangle.Fill>
                             </Rectangle>
-                            <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="27,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20">
+                            <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="27,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" x:Name="rectangle" MouseDown="rectangle_MouseDown" MouseMove="rectangle_MouseMove" MouseUp="rectangle_MouseUp">
                                 <Rectangle.Fill>
                                     <ImageBrush ImageSource="linguine.png"/>
                                 </Rectangle.Fill>
