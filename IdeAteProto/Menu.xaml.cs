@@ -60,10 +60,19 @@ namespace IdeAteProto
 
                 var myRectangle = (Rectangle)this.FindName(elementName);
                 var myTextBlock = (TextBlock)this.FindName(elementName2);
+                var ing1 = (CheckBox)this.FindName(elementName + "i1");
+                var ing2 = (CheckBox)this.FindName(elementName + "i2");
+                var ing3 = (CheckBox)this.FindName(elementName + "i3");
+
+
 
 
                 myRectangle.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
-                myTextBlock.Visibility = Visibility.Visible;
+                //myTextBlock.Visibility = Visibility.Visible;
+                ing1.Visibility = Visibility.Visible;
+                ing2.Visibility = Visibility.Visible;
+                ing3.Visibility = Visibility.Visible;
+
             }
             else
             {
