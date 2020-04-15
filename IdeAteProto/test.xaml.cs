@@ -21,10 +21,12 @@ namespace IdeAteProto
     {
         bool drag = false;
         Point startPoint;
+        Point original;
         public test()
         {
             InitializeComponent();
         }
+        // https://stackoverflow.com/questions/37163559/how-can-i-make-a-rectangle-on-a-canvas-which-is-draggable
         // this creates and adds rectangles dynamically
         private void addRectangleButton_Click(object sender, RoutedEventArgs e)
         {
@@ -51,6 +53,7 @@ namespace IdeAteProto
             drag = true;
             // save start point of dragging
             startPoint = Mouse.GetPosition(canvas);
+            original = Mouse.GetPosition(canvas);
         }
 
         private void rectangle_MouseMove(object sender, MouseEventArgs e)
@@ -73,6 +76,19 @@ namespace IdeAteProto
         {
             // stop dragging
             drag = false;
+
+            if ((startPoint.X >= 659 || startPoint.X <= 760) && (startPoint.Y >= 36 || startPoint.Y <= 111))
+            {
+                Rectangle draggedRectangle = sender as Rectangle;
+                ListBoxItem item = new ListBoxItem();
+                item.Content = draggedRectangle.Name;
+                order.Items.Add(item);
+                Canvas.SetLeft(draggedRectangle, original.X);
+                Canvas.SetTop(draggedRectangle, original.Y);
+            }
+            {
+                
+            }
         }
     }
 }
