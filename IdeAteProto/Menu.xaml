@@ -57,7 +57,7 @@
                             </Grid>
                             <Rectangle Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="10.5,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2">
                                 <Rectangle.Fill>
-                                    <ImageBrush ImageSource="spicy sausage.png"/>
+                                    <ImageBrush ImageSource="spicy_sausage.png"/>
                                 </Rectangle.Fill>
                             </Rectangle>
                             <Rectangle Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="10.5,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1">
@@ -180,7 +180,7 @@
                             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="27,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1"/>
                             <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20">
                                 <Rectangle.Fill>
-                                    <ImageBrush ImageSource="spicy sausage.png"/>
+                                    <ImageBrush ImageSource="spicy_sausage.png"/>
                                 </Rectangle.Fill>
                             </Rectangle>
                             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2"/>
