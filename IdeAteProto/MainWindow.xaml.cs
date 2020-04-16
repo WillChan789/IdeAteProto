@@ -38,6 +38,24 @@ namespace IdeAteProto
             } else
             {
                 Menu winB = new Menu();
+                winB.boxRed.Visibility = Visibility.Hidden;
+                winB.boxBlue.Visibility = Visibility.Hidden;
+                winB.boxPurple.Visibility = Visibility.Hidden;
+
+                winB.sendRed.Visibility = Visibility.Hidden;
+                winB.sendBlue.Visibility = Visibility.Hidden;
+                winB.sendPurple.Visibility = Visibility.Hidden;
+
+                winB.totalRed.Visibility = Visibility.Hidden;
+                winB.totalBlue.Visibility = Visibility.Hidden;
+                winB.totalPurple.Visibility = Visibility.Hidden;
+
+                winB.payRed.Visibility = Visibility.Hidden;
+                winB.payBlue.Visibility = Visibility.Hidden;
+                winB.payPurple.Visibility = Visibility.Hidden;
+
+                winB.callWaiterR.Visibility = Visibility.Hidden;
+
                 winB.Show();
             }
             this.Close();

@@ -39,7 +39,10 @@ namespace IdeAteProto
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            CWaiterTextL.Visibility = Visibility.Visible;
+            CWaiterTextR.Visibility = Visibility.Visible;
+            callWaiterL.IsEnabled = false;
+            callWaiterR.IsEnabled = false;
         }
 
         private bool dragging;

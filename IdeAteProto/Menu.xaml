@@ -7,23 +7,23 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid >
-        <Canvas x:Name="canvas" >
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="614,249,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
+        <Canvas x:Name="canvas" Margin="0,0,-0.4,0" >
+            <Border Name="boxPurple" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="614,249,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
                 <ListBox Margin="60.2,85.2,9.2,9.4" Height="75.2">
                     <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
                 </ListBox>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
+            <Border Name="boxRed" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
                 <ListBox Margin="60.2,9.2,9.2,85.4" Height="75.2">
                     <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
                 </ListBox>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
+            <Border Name="boxBlue"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
                 <ListBox Margin="9.2,9.2,60.2,85.4" Height="75.2">
                     <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
                 </ListBox>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,249,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
+            <Border Name="boxYellow" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,249,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
                 <ListBox Margin="9.2,85.2,60.2,9.4">
                     <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
                 </ListBox>
@@ -277,16 +277,16 @@
                     </ScrollViewer>
                 </TabItem>
             </TabControl>
-            <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-            <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-            <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
-            <Button Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+            <Button Name="sendPurple" Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+            <Button Name="sendRed" Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="721,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+            <Button Name="sendBlue" Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,114,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
+            <Button Name="sendYellow" Content="Send Order" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click" FontFamily="Century" FontSize="11"/>
             <Button x:Name="payBlue" Content="" HorizontalAlignment="Left" Height="48" Margin="112,114,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontFamily="Century" FontSize="11">
                 <Button.Background>
                     <ImageBrush ImageSource="pay.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="callWaiterL" Content="" HorizontalAlignment="Left" Margin="57,176,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.5,0.5" Height="68" Click="Button_Click_2" FontFamily="Century">
+            <Button x:Name="callWaiterL" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.5,0.5" Height="50" Click="Button_Click_2" FontFamily="Century" Canvas.Left="54" Canvas.Top="194">
                 <Button.Background>
                     <ImageBrush ImageSource="waiter.png"/>
                 </Button.Background>
@@ -299,17 +299,17 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
-            <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
-            <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
-            <Label Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+            <Label Name="totalBlue"  Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+            <Label Name="totalYellow" Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="10,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+            <Label Name="totalPurple" Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,311,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
+            <Label Name="totalRed" Content="Total: $14.99" HorizontalAlignment="Left" Height="26" Margin="675,88,0,0" VerticalAlignment="Top" Width="89" FontFamily="Century"/>
             <Button x:Name="infoButton" Content="" HorizontalAlignment="Left" Height="54" Margin="221,7,0,0" VerticalAlignment="Top" Width="53" FontFamily="Century">
                 <Button.Background>
                     <ImageBrush ImageSource="info.png"/>
                 </Button.Background>
             </Button>
             <Label Content="Drag and drop food into your cart. Send order when ready." HorizontalAlignment="Left" Height="32" Margin="279,16,0,0" VerticalAlignment="Top" Width="330" FontFamily="Century"/>
-            <Button x:Name="callWaiterR" Content="" HorizontalAlignment="Left" Margin="680,176,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.5,0.5" Height="68" Click="Button_Click_2" FontFamily="Century">
+            <Button x:Name="callWaiterR" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.5,0.5" Height="50" Click="Button_Click_2" FontFamily="Century" Canvas.Left="675" Canvas.Top="194">
                 <Button.Background>
                     <ImageBrush ImageSource="waiter.png"/>
                 </Button.Background>
@@ -337,6 +337,8 @@
                     <ImageBrush ImageSource="pay.png"/>
                 </Button.Background>
             </Button>
+            <Label Name="CWaiterTextL" Content="A Waiter will be with you shortly!" Visibility="Hidden"  HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="197" FontFamily="Century" Canvas.Top="171"/>
+            <Label x:Name="CWaiterTextR" Content="A Waiter will be with you shortly!" Visibility="Hidden"  HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="199" FontFamily="Century" Canvas.Left="595" Canvas.Top="171"/>
         </Canvas>
     </Grid>
 </Window>
