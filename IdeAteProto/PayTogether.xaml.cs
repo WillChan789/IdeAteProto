@@ -51,6 +51,19 @@ namespace IdeAteProto
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Menu winA = new Menu();
+            //int num = (int) App.Current.Properties["numPayers"];
+
+            //if (num == 2) {
+              //winA.boxRed.Visibility = Visibility.Hidden;
+              //winA.boxBlue.Visibility = Visibility.Hidden;
+              //winA.sendRed.Visibility = Visibility.Hidden;
+              //winA.sendBlue.Visibility = Visibility.Hidden;
+              //winA.totalRed.Visibility = Visibility.Hidden;
+              //winA.totalBlue.Visibility = Visibility.Hidden;
+              //winA.payRed.Visibility = Visibility.Hidden;
+              //winA.payBlue.Visibility = Visibility.Hidden;
+            //}
+
             winA.Show();
             this.Close();
         }

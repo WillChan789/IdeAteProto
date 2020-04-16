@@ -29,7 +29,32 @@ namespace IdeAteProto
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if ((sender as Button).Name == "sendBlue")
+            {
+                listBlue.IsEnabled = false;
+                sendBlue.IsEnabled = false;
+                sendBlue.Content = "Order Sent!";
+            }
+            else if ((sender as Button).Name == "sendYellow")
+            {
+                listYellow.IsEnabled = false;
+                sendYellow.IsEnabled = false;
+                sendYellow.Content = "Order Sent!";
+            }
 
+            else if ((sender as Button).Name == "sendRed")
+            {
+                listRed.IsEnabled = false;
+                sendRed.IsEnabled = false;
+                sendRed.Content = "Order Sent!";
+            }
+
+            else if ((sender as Button).Name == "sendPurple")
+            {
+                listPurple.IsEnabled = false;
+                sendPurple.IsEnabled = false;
+                sendPurple.Content = "Order Sent!";
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -31,6 +31,7 @@ namespace IdeAteProto
             ComboBoxItem cbi = (ComboBoxItem)PeopleDropdown.SelectedItem;
             string num = cbi.Content.ToString();
             int n = Int16.Parse(num);
+            App.Current.Properties["numPayers"] = n;
             if (n > 1)
             {
                 PayTogether winA = new PayTogether();
