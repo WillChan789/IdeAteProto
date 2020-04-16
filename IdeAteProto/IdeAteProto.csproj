@@ -214,5 +214,53 @@
   <ItemGroup>
     <Resource Include="back-button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="arancini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bruschetta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="caprese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cozze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="prosciutto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="agnello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bistecca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="red wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="white wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="champagne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="soda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sparkling water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cheesecake.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

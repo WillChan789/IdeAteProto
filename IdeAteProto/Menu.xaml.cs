@@ -172,5 +172,20 @@ namespace IdeAteProto
             // stop dragging
             drag = false;
         }
+
+        private void infoButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (infoText.Content.Equals("Drag and drop food into your cart. Send order when ready."))
+            {
+                infoText.Content = "";
+                infoText2.Content = "";
+                infoText3.Content = "";
+            } else
+            {
+                infoText.Content = "Drag and drop food into your cart. Send order when ready.";
+                infoText2.Content = "Tap pay icon to pay and waiter icon for additional";
+                infoText3.Content = "assistance.";
+            }
+        }
     }
 }
