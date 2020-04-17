@@ -176,7 +176,7 @@
     <Resource Include="margarita.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="spicy sausage.png" />
+    <Resource Include="spicy_sausage.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\info.png" />
