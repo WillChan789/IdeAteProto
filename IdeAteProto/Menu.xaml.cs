@@ -29,7 +29,32 @@ namespace IdeAteProto
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if ((sender as Button).Name == "sendBlue")
+            {
+                listBlue.IsEnabled = false;
+                sendBlue.IsEnabled = false;
+                sendBlue.Content = "Order Sent!";
+            }
+            else if ((sender as Button).Name == "sendYellow")
+            {
+                listYellow.IsEnabled = false;
+                sendYellow.IsEnabled = false;
+                sendYellow.Content = "Order Sent!";
+            }
 
+            else if ((sender as Button).Name == "sendRed")
+            {
+                listRed.IsEnabled = false;
+                sendRed.IsEnabled = false;
+                sendRed.Content = "Order Sent!";
+            }
+
+            else if ((sender as Button).Name == "sendPurple")
+            {
+                listPurple.IsEnabled = false;
+                sendPurple.IsEnabled = false;
+                sendPurple.Content = "Order Sent!";
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -39,7 +64,10 @@ namespace IdeAteProto
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            CWaiterTextL.Visibility = Visibility.Visible;
+            CWaiterTextR.Visibility = Visibility.Visible;
+            callWaiterL.IsEnabled = false;
+            callWaiterR.IsEnabled = false;
         }
 
         private bool dragging;
@@ -143,6 +171,21 @@ namespace IdeAteProto
         {
             // stop dragging
             drag = false;
+        }
+
+        private void infoButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (infoText.Content.Equals("Drag and drop food into your cart. Send order when ready."))
+            {
+                infoText.Content = "";
+                infoText2.Content = "";
+                infoText3.Content = "";
+            } else
+            {
+                infoText.Content = "Drag and drop food into your cart. Send order when ready.";
+                infoText2.Content = "Tap pay icon to pay and waiter icon for additional";
+                infoText3.Content = "assistance.";
+            }
         }
     }
 }

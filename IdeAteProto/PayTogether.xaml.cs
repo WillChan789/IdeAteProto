@@ -27,6 +27,23 @@ namespace IdeAteProto
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Menu winA = new Menu();
+            winA.boxRed.Visibility = Visibility.Hidden;
+            winA.boxBlue.Visibility = Visibility.Hidden;
+            winA.boxPurple.Visibility = Visibility.Hidden;
+
+            winA.sendRed.Visibility = Visibility.Hidden;
+            winA.sendBlue.Visibility = Visibility.Hidden;
+            winA.sendPurple.Visibility = Visibility.Hidden;
+
+            winA.totalRed.Visibility = Visibility.Hidden;
+            winA.totalBlue.Visibility = Visibility.Hidden;
+            winA.totalPurple.Visibility = Visibility.Hidden;
+
+            winA.payRed.Visibility = Visibility.Hidden;
+            winA.payBlue.Visibility = Visibility.Hidden;
+            winA.payPurple.Visibility = Visibility.Hidden;
+
+            winA.callWaiterR.Visibility = Visibility.Hidden;
             winA.Show();
             this.Close();
         }
@@ -34,6 +51,19 @@ namespace IdeAteProto
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Menu winA = new Menu();
+            //int num = (int) App.Current.Properties["numPayers"];
+
+            //if (num == 2) {
+              //winA.boxRed.Visibility = Visibility.Hidden;
+              //winA.boxBlue.Visibility = Visibility.Hidden;
+              //winA.sendRed.Visibility = Visibility.Hidden;
+              //winA.sendBlue.Visibility = Visibility.Hidden;
+              //winA.totalRed.Visibility = Visibility.Hidden;
+              //winA.totalBlue.Visibility = Visibility.Hidden;
+              //winA.payRed.Visibility = Visibility.Hidden;
+              //winA.payBlue.Visibility = Visibility.Hidden;
+            //}
+
             winA.Show();
             this.Close();
         }
