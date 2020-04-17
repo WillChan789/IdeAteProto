@@ -9,22 +9,22 @@
   <Grid >
     <Canvas x:Name="canvas" Margin="0,0,-0.4,0" >
       <Border Name="boxPurple" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="614,249,-0.4,0" VerticalAlignment="Top" Width="180" Background="#FFE352F6">
-        <ListBox Margin="60.2,85.2,9.2,9.4" Height="75.2">
+        <ListBox x:Name="listPurple" Margin="60.2,85.2,9.2,9.4" Height="75.2">
           <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
         </ListBox>
       </Border>
       <Border Name="boxRed" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Margin="614,0,-0.4,0" Background="#FFF35C5C">
-        <ListBox Margin="60.2,9.2,9.2,85.4" Height="75.2">
+        <ListBox x:Name="listRed" Margin="60.2,9.2,9.2,85.4" Height="75.2">
           <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
         </ListBox>
       </Border>
       <Border Name="boxBlue"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="180" Background="#FF7681F9">
-        <ListBox Margin="9.2,9.2,60.2,85.4" Height="75.2">
+        <ListBox x:Name="listBlue" Margin="9.2,9.2,60.2,85.4" Height="75.2">
           <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
         </ListBox>
       </Border>
       <Border Name="boxYellow" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,249,0,0" VerticalAlignment="Top" Width="180" Background="#FFD9F464">
-        <ListBox Margin="9.2,85.2,60.2,9.4">
+        <ListBox x:Name="listYellow" Margin="9.2,85.2,60.2,9.4">
           <ListBoxItem Content="Pasta --- $14.99" FontFamily="Century"/>
         </ListBox>
       </Border>
