@@ -110,22 +110,40 @@
                                 <CheckBox x:Name="lasagnai2" Content="Cheese" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
                                 <CheckBox x:Name="lasagnai3" Content="Garlic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" Height="22" Width="57" FontSize="10" Visibility="Hidden"/>
                             </Grid>
-                            <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20">
-                <Rectangle.Fill>
-                  <ImageBrush ImageSource="margarita.png"/>
-                </Rectangle.Fill>
-              </Rectangle>
-              <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.RowSpan="2">
-                <Rectangle.Fill>
-                  <ImageBrush ImageSource="carne.png"/>
-                </Rectangle.Fill>
-              </Rectangle>
-              <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,81.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RadiusY="20" RadiusX="20" Grid.Row="1">
-                <Rectangle.Fill>
-                  <ImageBrush ImageSource="tiramisu.png"/>
-                </Rectangle.Fill>
-              </Rectangle>
-            </Grid>
+                            <Grid Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,27,0,0" VerticalAlignment="Top" Width="80" MouseLeftButtonDown="MouseLeftDownRect" MouseLeftButtonUp="MouseLeftUpRect" MouseMove="MouseMoveRect">
+                                <Rectangle x:Name="margarita" Stroke="Black" RadiusY="20" RadiusX="20">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="margarita.png"/>
+                                    </Rectangle.Fill>
+                                </Rectangle>
+                                <TextBlock x:Name="margaritat" Visibility="Hidden" TextAlignment="Center" TextWrapping="Wrap" FontSize="8"> Cheese, Tomato, Herbs</TextBlock>
+                                <CheckBox x:Name="margaritai1" Content="Cheese" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="margaritai2" Content="Tomato" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="margaritai3" Content="Herbs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" Height="22" Width="57" FontSize="10" Visibility="Hidden"/>
+                            </Grid>
+                            <Grid Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,120,0,0" VerticalAlignment="Top" Width="80" Grid.RowSpan="2" MouseLeftButtonDown="MouseLeftDownRect" MouseLeftButtonUp="MouseLeftUpRect" MouseMove="MouseMoveRect">
+                                <Rectangle x:Name="carne" Stroke="Black" RadiusY="20" RadiusX="20" >
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="carne.png"/>
+                                    </Rectangle.Fill>
+                                </Rectangle>
+                                <TextBlock x:Name="carnet" Visibility="Hidden" TextAlignment="Center" TextWrapping="Wrap" FontSize="8">Carne, Sauce, Herbs</TextBlock>
+                                <CheckBox x:Name="carnei1" Content="Carne" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="carnei2" Content="Vegetarian" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="carnei3" Content="Sauce" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" Height="22" Width="57" FontSize="10" Visibility="Hidden"/>
+                            </Grid>
+                            <Grid Grid.Column="3" HorizontalAlignment="Left" Height="78" Margin="142,81.5,0,0" VerticalAlignment="Top" Width="80" Grid.Row="1" MouseLeftButtonDown="MouseLeftDownRect" MouseLeftButtonUp="MouseLeftUpRect" MouseMove="MouseMoveRect">
+                                <Rectangle x:Name="tiramisu" Stroke="Black" RadiusY="20" RadiusX="20" >
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="tiramisu.png"/>
+                                    </Rectangle.Fill>
+                                </Rectangle>
+                                <TextBlock x:Name="tiramisut" Visibility="Hidden" TextAlignment="Center" TextWrapping="Wrap" FontSize="8">Cream, Biscuit, Coffee</TextBlock>
+                                <CheckBox x:Name="tiramisui1" Content="Coffee" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="tiramisui2" Content="Cream" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0" Height="21" Width="57" FontSize="10" Visibility="Hidden"/>
+                                <CheckBox x:Name="tiramisui3" Content="Biscuit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" Height="22" Width="57" FontSize="10" Visibility="Hidden"/>
+                            </Grid>
+                        </Grid>
           </ScrollViewer>
         </TabItem>
         <TabItem Header="Appetizers" FontFamily="Century" FontSize="14">
